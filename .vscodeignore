@@ -1,0 +1,14 @@
+.vscode/**
+node_modules/**
+.gitignore
+tsconfig.json
+*.docx
+*.vsix
+test.js
+test.ts
+test.html
+test.vue
+test.react
+test.angular
+test.svelte
+test.php

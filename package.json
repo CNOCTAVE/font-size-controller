@@ -1,0 +1,52 @@
+{
+  "name": "font-size-controller",
+  "displayName": "字体大小控制器（大字版）",
+  "description": "自由调节VSCode编辑区字号，支持预设档位和快速切换",
+  "author": "Yu Hongbo <yuhongbo@member.fsf.org>, CNOCTAVE <cnoctave@qq.com>",
+  "email": "cnoctave@qq.com",
+  "version": "0.0.1",
+  "publisher": "cnoctave",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CNOCTAVE/font-size-controller"
+  },
+  "bugs": {
+    "url": "https://github.com/CNOCTAVE/ottohub-electron/issues",
+    "email": "cnoctave@qq.com"
+  },
+  "license": "AGPL-3.0-only",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "font-size-controller.openSettingPanel",
+        "title": "打开字体大小设置面板"
+      },
+      {
+        "command": "font-size-controller.setLargeFont",
+        "title": "大字"
+      },
+      {
+        "command": "font-size-controller.setMiddleFont",
+        "title": "中字"
+      },
+      {
+        "command": "font-size-controller.setSmallFont",
+        "title": "小字（默认字号）"
+      }
+    ]
+  },
+  "publishConfig": {
+      "registry": "https://registry.npmjs.org/",
+      "access": "public"
+  }
+}
